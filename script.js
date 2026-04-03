@@ -132,7 +132,7 @@ form.addEventListener("submit", (event) => {
     return;
   }
 
-  if (message.length < 10) {
+  if (message.length < 1) {
     event.preventDefault();
     messageField.classList.add("invalid");
     formMessage.textContent = "Message should be at least 10 characters.";
@@ -140,7 +140,6 @@ form.addEventListener("submit", (event) => {
     return;
   }
 
-  // ✅ If everything is valid → DO NOT prevent default
   formMessage.textContent = "Sending message...";
   formMessage.style.color = "#7ff0c8";
 
