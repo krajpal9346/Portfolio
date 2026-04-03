@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Modern personal portfolio of Kashish Rajpal." />
+    <title>Kashish Rajpal | Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="portfolio.css" />
+  </head>
+  <body>
+    <div id="loader"><div class="loader-ring"></div><p>Loading portfolio...</p></div>
+
+    <header class="header">
+      <nav class="navbar container">
+        <a href="#home" class="logo">KR</a>
+        <button id="menuToggle" class="menu-toggle" aria-label="Toggle navigation">
+          <span></span><span></span><span></span>
+        </button>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="#home" class="nav-link active">Home</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#experience" class="nav-link">Experience</a></li>
+          <li><a href="#education" class="nav-link">Education</a></li>
+          <li><a href="#achievements" class="nav-link">Achievements</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+          <li><a href="./Kashish%20Rajpal.pdf" class="nav-link nav-resume-link" target="_blank" rel="noreferrer">Resume</a></li>
+        </ul>
+        <button id="themeToggle" class="theme-toggle" aria-label="Toggle dark and light mode">
+          <i class="fa-solid fa-moon"></i>
+        </button>
+      </nav>
+    </header>
+
+    <main>
+      <section id="home" class="hero section">
+        <div class="container hero-layout">
+          <div class="hero-content">
+            <p class="hero-tag">Computer Science Student | Aspiring Software Engineer</p>
+            <h1 class="hero-title">Kashish Rajpal</h1>
+            <p class="typing-line"><span id="typingText"></span><span class="cursor">|</span></p>
+            <p class="hero-intro">I build practical and intelligent digital experiences with clean code.</p>
+            <div class="hero-cta">
+              <a href="#projects" class="btn btn-primary">View Projects</a>
+              <a href="#experience" class="btn btn-secondary">View Experience</a>
+              <a href="#contact" class="btn btn-ghost">Contact Me</a>
+              <a href="./Kashish%20Rajpal.pdf" class="btn btn-resume" target="_blank" rel="noreferrer">View Resume</a>
+            </div>
+          </div>
+          <div class="hero-image-card card reveal code-editor-card">
+            <div class="editor-topbar">
+              <span class="dot red"></span>
+              <span class="dot yellow"></span>
+              <span class="dot green"></span>
+              <span class="editor-title">portfolio.js</span>
+            </div>
+            <pre class="editor-body"><code id="codeTyping"></code><span class="code-cursor">|</span></pre>
+            <p class="hero-image-caption">Building ideas into intelligent code.</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="section reveal">
+        <div class="container">
+          <h2 class="section-title">About Me</h2>
+          <div class="about-grid">
+            <div class="about-image-wrap card">
+              <img class="about-image" alt="Kashish Rajpal profile" src="file:///C:/Users/kashi/.cursor/projects/c-Users-kashi-Desktop-Kashish-Rajpal/assets/c__Users_kashi_AppData_Roaming_Cursor_User_workspaceStorage_b288cd887c3154ea22366dc0d66822a9_images_Screenshot_2026-04-02_162549-04eb21ff-f32c-4a2e-bc64-6e6014216eca.png" />
+            </div>
+            <div>
+              <p class="about-text">Curiosity in mind, intelligence in code. I am a Computer Science undergraduate specializing in AI & ML, fascinated by how logic, data, and creativity come together to build intelligent systems.</p>
+              <p class="about-text">My journey has been hands-on and code-driven: building resume screening, disease prediction systems, and intelligent games with full-stack architecture.</p>
+              <p class="about-text">Currently learning, constantly building, always curious. Looking forward to opportunities where I can turn ideas into intelligent code.</p>
+              <div class="about-cards">
+                <article class="card mini-card"><h3>Core Interests</h3><p>AI/ML, Generative AI, Full-Stack Development</p></article>
+                <article class="card mini-card"><h3>Career Goal</h3><p>Build scalable software that is intelligent and impactful.</p></article>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="skills" class="section reveal">
+        <div class="container">
+          <h2 class="section-title">Skills</h2>
+          <div class="skills-grid">
+            <article class="card">
+              <h3 class="skill-heading"><i class="fa-solid fa-code"></i> Programming Languages</h3>
+              <div class="skill-icons">
+                <span class="skill-icon"><i class="fa-brands fa-python"></i> Python</span>
+                <span class="skill-icon"><i class="fa-brands fa-java"></i> Java</span>
+                <span class="skill-icon"><i class="fa-brands fa-php"></i> PHP</span>
+              </div>
+              <div class="skill-item"><span>C, C++, Java, Python, HTML, CSS, JavaScript, PHP</span></div>
+            </article>
+            <article class="card">
+              <h3 class="skill-heading"><i class="fa-solid fa-brain"></i> Major Technical Areas</h3>
+              <div class="skill-icons">
+                <span class="skill-icon"><i class="fa-solid fa-diagram-project"></i> DSA</span>
+                <span class="skill-icon"><i class="fa-solid fa-robot"></i> AI/ML</span>
+              </div>
+              <div class="skill-item"><span>Data Structures & Algorithms, Artificial Intelligence & Machine Learning</span></div>
+            </article>
+            <article class="card">
+              <h3 class="skill-heading"><i class="fa-solid fa-database"></i> Databases</h3>
+              <div class="skill-icons">
+                <span class="skill-icon"><i class="fa-solid fa-server"></i> DBMS</span>
+                <span class="skill-icon"><i class="fa-solid fa-leaf"></i> MongoDB</span>
+              </div>
+              <div class="skill-item"><span>Database Management Systems (DBMS), SQL basics, NoSQL (MongoDB)</span></div>
+            </article>
+            <article class="card">
+              <h3 class="skill-heading"><i class="fa-solid fa-laptop-code"></i> Web & Application Development</h3>
+              <div class="skill-icons">
+                <span class="skill-icon"><i class="fa-brands fa-html5"></i> HTML5</span>
+                <span class="skill-icon"><i class="fa-brands fa-css3-alt"></i> CSS3</span>
+                <span class="skill-icon"><i class="fa-brands fa-js"></i> JavaScript</span>
+              </div>
+              <div class="skill-item"><span>Python, Flask, HTML, CSS, JavaScript, REST APIs</span></div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="projects" class="section reveal">
+        <div class="container">
+          <h2 class="section-title">Projects</h2>
+          <div class="projects-grid">
+            <article class="card project-card"><h3>AI-Based Resume Screening & Job Matching System</h3><p>NLP-based system to analyze resumes and match them with job descriptions using Python and Flask. Implemented text preprocessing, keyword extraction, and similarity scoring.</p><p class="tech">Python, Flask, NLP, ML</p><div class="project-actions"><a class="btn btn-small btn-secondary" href="https://ai-resume-screening-system-1-uh90.onrender.com/" target="_blank" rel="noreferrer">Live Project</a><a class="btn btn-small" href="https://github.com/krajpal9346/AI-Resume-Screening-System" target="_blank" rel="noreferrer">GitHub</a></div></article>
+            <article class="card project-card"><h3>AI-Powered Disease Prediction System</h3><p>ML-based web application to predict diseases from user-entered symptoms. Trained and evaluated models using Scikit-learn and integrated frontend with Flask.</p><p class="tech">Python, ML, Scikit-learn, Flask, HTML, CSS, JS</p><div class="project-actions"><a class="btn btn-small btn-secondary" href="https://ai-disease-prediction-system-7vxp.onrender.com/" target="_blank" rel="noreferrer">Live Project</a><a class="btn btn-small" href="https://github.com/krajpal9346/AI-Disease-Prediction-System" target="_blank" rel="noreferrer">GitHub</a></div></article>
+            <article class="card project-card"><h3>AI-Powered Tic Tac Toe Game</h3><p>Unbeatable AI opponent using the Minimax algorithm with a real-time web interface.</p><p class="tech">Python, Minimax, Flask, HTML, CSS, JS</p><div class="project-actions"><a class="btn btn-small btn-secondary" href="#" target="_blank" rel="noreferrer">Live Project</a><a class="btn btn-small" href="https://github.com/krajpal9346/tic-tac-toe" target="_blank" rel="noreferrer">GitHub</a></div></article>
+            <article class="card project-card"><h3>Sudoku AI – Intelligent Puzzle Game</h3><p>Backtracking-based Sudoku solver with web-based visualization.</p><p class="tech">Python, Backtracking, Flask, HTML, CSS, JS</p><div class="project-actions"><a class="btn btn-small btn-secondary" href="#" target="_blank" rel="noreferrer">Live Project</a><a class="btn btn-small" href="https://github.com/krajpal9346/Sudoku" target="_blank" rel="noreferrer">GitHub</a></div></article>
+            <article class="card project-card"><h3>AI-based Smart Traffic Monitoring System</h3><p>An intelligent traffic monitoring system that uses computer vision to perform real-time vehicle detection, tracking, speed estimation, and entry/exit counting for efficient traffic analysis and management.</p><p class="tech">Python, YOLOv8 (Ultralytics), OpenCV, NumPy</p><div class="project-actions"><a class="btn btn-small btn-secondary" href="#" target="_blank" rel="noreferrer">Live Project</a><a class="btn btn-small" href="https://github.com/krajpal9346/smart-traffic-monitoring-system" target="_blank" rel="noreferrer">GitHub</a></div></article>
+          </div>
+        </div>
+      </section>
+
+      <section id="experience" class="section reveal">
+        <div class="container">
+          <h2 class="section-title">Experience & Internships</h2>
+          <div class="timeline">
+            <article class="card timeline-item">
+              <h3>Software Engineer Intern - YugaYatra Retail OPC Pvt. Ltd.</h3>
+              <span>Mar 2026 - May 2026</span>
+              <ul>
+                <li>Developed and customized WordPress websites with a focus on performance, responsiveness, and user experience.</li>
+                <li>Collaborated with designers and developers to implement modern UI/UX solutions.</li>
+                <li>Optimized website layouts, plugins, and content structure to improve usability and load times.</li>
+                <li>Actively participated in team discussions, contributing ideas for design and functionality improvements.</li>
+              </ul>
+            </article>
+            <article class="card timeline-item">
+              <h3>Senior Sales Executive - Yugen Infra</h3>
+              <span>May 2024 - Jul 2024</span>
+              <ul>
+                <li>Managed client interactions, understanding requirements and delivering tailored real estate solutions.</li>
+                <li>Led end-to-end sales processes including pitching, negotiation, and closing deals.</li>
+                <li>Coordinated with internal teams and stakeholders to ensure seamless client experience.</li>
+                <li>Strengthened communication and persuasion skills while consistently achieving sales targets.</li>
+              </ul>
+            </article>
+            <article class="card timeline-item">
+              <h3>Customer Service Executive - Globiva</h3>
+              <span>Jun 2023 - Jul 2023</span>
+              <ul>
+                <li>Handled customer queries efficiently, ensuring high levels of satisfaction and quick resolution.</li>
+                <li>Maintained strong communication standards while addressing concerns and providing solutions.</li>
+                <li>Improved customer experience by identifying recurring issues and suggesting process enhancements.</li>
+                <li>Developed problem-solving and multitasking skills in a fast-paced support environment.</li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="education" class="section reveal">
+        <div class="container">
+          <h2 class="section-title">Education</h2>
+          <div class="timeline">
+            <article class="card timeline-item education-item">
+              <div class="edu-top">
+                <h3><i class="fa-solid fa-graduation-cap"></i> B.Tech CSE (AI & ML)</h3>
+                <span class="uni-icon"><i class="fa-solid fa-building-columns"></i> GD Goenka University, Sohna</span>
+              </div>
+              <span>Aug 2023 - May 2027</span>
+              <div class="cgpa-wrap">
+                <div class="cgpa-ring">
+                  <div class="cgpa-inner">
+                    <strong>9.43</strong>
+                    <small>/10</small>
+                  </div>
+                </div>
+                <p class="cgpa-text">CGPA</p>
+              </div>
+            </article>
+            <article class="card timeline-item education-item">
+              <div class="edu-top">
+                <h3><i class="fa-solid fa-university"></i> Bachelor of Computer Science Honours</h3>
+                <span class="uni-icon"><i class="fa-solid fa-landmark"></i> Conestoga College, Waterloo, Canada</span>
+              </div>
+              <span>Jan 2023 - May 2023</span>
+              <p>1 semester</p>
+              <div class="cgpa-wrap">
+                <div class="cgpa-ring percent-ring">
+                  <div class="cgpa-inner">
+                    <strong>87.75%</strong>
+                    <small>/100</small>
+                  </div>
+                </div>
+                <p class="cgpa-text">Percentage</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="achievements" class="section reveal">
+        <div class="container">
+          <h2 class="section-title">Achievements, Certifications & Virtual Experience</h2>
+          <div class="achievements-grid">
+            <article class="card">
+              <h3>Certifications</h3>
+              <div class="cert-list">
+                <div class="cert-item">
+                  <img src="file:///C:/Users/kashi/.cursor/projects/c-Users-kashi-Desktop-Kashish-Rajpal/assets/c__Users_kashi_AppData_Roaming_Cursor_User_workspaceStorage_b288cd887c3154ea22366dc0d66822a9_images_image-72783db2-e0b5-4acd-9afa-cba3aa2e231f.png" alt="Prepare Data for ML APIs certificate" class="cert-thumb" />
+                  <div>
+                    <p>Prepare Data for ML APIs - Google Cloud</p>
+                    <a class="btn btn-small cert-btn" href="https://www.credly.com/badges/d5bd4edd-1617-46d3-95bc-21a7b9b082a3/linked_in_profile" target="_blank" rel="noreferrer">View Certificate</a>
+                  </div>
+                </div>
+                <div class="cert-item">
+                  <img src="file:///C:/Users/kashi/.cursor/projects/c-Users-kashi-Desktop-Kashish-Rajpal/assets/c__Users_kashi_AppData_Roaming_Cursor_User_workspaceStorage_b288cd887c3154ea22366dc0d66822a9_images_image-eb0d4030-f243-47e0-867d-53fc6db8b57f.png" alt="Introduction to AI concepts certificate" class="cert-thumb" />
+                  <div>
+                    <p>Introduction to AI Concepts - Microsoft</p>
+                    <a class="btn btn-small cert-btn" href="https://learn.microsoft.com/en-us/users/kashishrajpal-9728/achievements/q5cpgk6e?ref=https%3A%2F%2F" target="_blank" rel="noreferrer">View Certificate</a>
+                  </div>
+                </div>
+                <div class="cert-item">
+                  <img src="file:///C:/Users/kashi/.cursor/projects/c-Users-kashi-Desktop-Kashish-Rajpal/assets/c__Users_kashi_AppData_Roaming_Cursor_User_workspaceStorage_b288cd887c3154ea22366dc0d66822a9_images_image-1638a746-33d7-4731-a110-8076d0f80333.png" alt="Introduction to Generative AI certificate" class="cert-thumb" />
+                  <div>
+                    <p>Introduction to Generative AI - Google Cloud</p>
+                    <a class="btn btn-small cert-btn" href="https://www.skills.google/public_profiles/5e66479c-3683-473e-93e6-ff243db1da87/badges/20928504?utm_medium=social&utm_source=linkedin&utm_campaign=ql-social-share#GenerativeAI" target="_blank" rel="noreferrer">View Certificate</a>
+                  </div>
+                </div>
+                <div class="cert-item">
+                  <img src="file:///C:/Users/kashi/.cursor/projects/c-Users-kashi-Desktop-Kashish-Rajpal/assets/c__Users_kashi_AppData_Roaming_Cursor_User_workspaceStorage_b288cd887c3154ea22366dc0d66822a9_images_image-8fdcf60b-8a00-433f-9ecd-a5b0e576d7e0.png" alt="Data Structures and Algorithms certificate" class="cert-thumb" />
+                  <div>
+                    <p>Data Structures & Algorithms - GeeksforGeeks</p>
+                    <a class="btn btn-small cert-btn" href="https://media.geeksforgeeks.org/certificates/1773986870/592b2ae9409a249e99a07adb7bd9bab6.pdf" target="_blank" rel="noreferrer">View Certificate</a>
+                  </div>
+                </div>
+              </div>
+            </article>
+            <article class="card">
+              <h3>Virtual Experience</h3>
+              <div class="cert-list">
+                <div class="cert-item">
+                  <img src="file:///C:/Users/kashi/.cursor/projects/c-Users-kashi-Desktop-Kashish-Rajpal/assets/c__Users_kashi_AppData_Roaming_Cursor_User_workspaceStorage_b288cd887c3154ea22366dc0d66822a9_images_image-f7284a33-d355-4014-8868-69cf1bc127a8.png" alt="Deloitte Technology Job Simulation certificate" class="cert-thumb" />
+                  <div>
+                    <p>Deloitte Australia - Technology Job Simulation</p>
+                    <a class="btn btn-small cert-btn" href="https://www.theforage.com/completion-certificates/9PBTqmSxAf6zZTseP/udmxiyHeqYQLkTPvf_9PBTqmSxAf6zZTseP_694011a6af171cf17d5d21eb_1765895598568_completion_certificate.pdf" target="_blank" rel="noreferrer">View Certificate</a>
+                  </div>
+                </div>
+                <div class="cert-item">
+                  <img src="file:///C:/Users/kashi/.cursor/projects/c-Users-kashi-Desktop-Kashish-Rajpal/assets/c__Users_kashi_AppData_Roaming_Cursor_User_workspaceStorage_b288cd887c3154ea22366dc0d66822a9_images_image-f2a21a2c-e58f-497d-abe1-fd70b4338289.png" alt="Tata GenAI Powered Data Analytics certificate" class="cert-thumb" />
+                  <div>
+                    <p>Tata Group - GenAI Powered Data Analytics Job Simulation</p>
+                    <a class="btn btn-small cert-btn" href="https://www.theforage.com/completion-certificates/ifobHAoMjQs9s6bKS/gMTdCXwDdLYoXZ3wG_ifobHAoMjQs9s6bKS_694011a6af171cf17d5d21eb_1765913014585_completion_certificate.pdf" target="_blank" rel="noreferrer">View Certificate</a>
+                  </div>
+                </div>
+                <div class="cert-item">
+                  <img src="file:///C:/Users/kashi/.cursor/projects/c-Users-kashi-Desktop-Kashish-Rajpal/assets/c__Users_kashi_AppData_Roaming_Cursor_User_workspaceStorage_b288cd887c3154ea22366dc0d66822a9_images_image-fb76a456-a812-4a0a-9419-90cc4792550f.png" alt="JPMorganChase Software Engineering Job Simulation certificate" class="cert-thumb" />
+                  <div>
+                    <p>JPMorganChase - Software Engineering Job Simulation</p>
+                    <a class="btn btn-small cert-btn" href="https://www.theforage.com/completion-certificates/Sj7temL583QAYpHXD/E6McHJDKsQYh79moz_Sj7temL583QAYpHXD_694011a6af171cf17d5d21eb_1769104567434_completion_certificate.pdf" target="_blank" rel="noreferrer">View Certificate</a>
+                  </div>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="section reveal contact-section">
+        <div class="container">
+          <h2 class="section-title">Contact Me</h2>
+          <div class="contact-grid">
+            <div class="card contact-info-card">
+              <div class="contact-profile">
+                <img
+                  src="file:///C:/Users/kashi/.cursor/projects/c-Users-kashi-Desktop-Kashish-Rajpal/assets/c__Users_kashi_AppData_Roaming_Cursor_User_workspaceStorage_b288cd887c3154ea22366dc0d66822a9_images_Screenshot_2026-04-02_162549-04eb21ff-f32c-4a2e-bc64-6e6014216eca.png"
+                  alt="Kashish Rajpal profile photo"
+                  class="contact-avatar"
+                />
+                <div>
+                  <p><strong>Name:</strong> Kashish Rajpal</p>
+                  <p><strong>Email:</strong> <a href="mailto:kashishrajpal499@gmail.com">kashishrajpal499@gmail.com</a></p>
+                </div>
+              </div>
+              <p class="contact-intro">I am always open to opportunities, collaborations, and interesting projects.</p>
+              <p class="contact-intro">Let us build something amazing together 🚀</p>
+              <div class="contact-meta">
+                <p><i class="fa-solid fa-location-dot"></i> Gurgaon, India</p>
+                <p><i class="fa-solid fa-circle-check"></i> Available for internships / full-time roles</p>
+              </div>
+              <div class="quick-actions">
+                <a class="btn btn-resume" href="./Kashish%20Rajpal.pdf" download><i class="fa-solid fa-file-arrow-down"></i> Download Resume</a>
+              </div>
+              <div class="socials social-enhanced">
+                <a class="linkedin" href="https://www.linkedin.com/in/kashish-rajpal/" target="_blank" rel="noreferrer"><i class="fa-brands fa-linkedin"></i><span>LinkedIn</span></a>
+                <a class="github" href="https://github.com/krajpal9346" target="_blank" rel="noreferrer"><i class="fa-brands fa-github"></i><span>GitHub</span></a>
+                <a class="leetcode" href="https://leetcode.com/u/Kashish_rjpl/" target="_blank" rel="noreferrer"><i class="fa-solid fa-code"></i><span>LeetCode</span></a>
+              </div>
+            </div>
+            <form id="contactForm" class="card contact-form" novalidate>
+              <div class="input-group">
+                <input id="fullName" type="text" placeholder=" " required />
+                <label for="fullName">Full Name</label>
+              </div>
+              <div class="input-group">
+                <input id="email" type="email" placeholder=" " required />
+                <label for="email">Email</label>
+              </div>
+              <div class="input-group">
+                <textarea id="message" rows="5" placeholder=" " required></textarea>
+                <label for="message">Message</label>
+              </div>
+              <button type="submit" class="btn btn-primary">Send Message</button>
+              <p id="formMessage" class="form-message"></p>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <button id="scrollTopBtn" aria-label="Scroll to top"><i class="fa-solid fa-arrow-up"></i></button>
+
+    <footer class="footer">
+      <div class="container footer-content">
+        <p>© <span id="year"></span> Kashish Rajpal. All rights reserved.</p>
+        <div class="socials">
+          <a href="https://www.linkedin.com/in/kashish-rajpal/" target="_blank" rel="noreferrer"><i class="fa-brands fa-linkedin"></i></a>
+          <a href="https://github.com/krajpal9346" target="_blank" rel="noreferrer"><i class="fa-brands fa-github"></i></a>
+          <a href="https://leetcode.com/u/Kashish_rjpl/" target="_blank" rel="noreferrer"><i class="fa-solid fa-code"></i></a>
+        </div>
+      </div>
+    </footer>
+    <script src="portfolio.js"></script>
+  </body>
+</html>
