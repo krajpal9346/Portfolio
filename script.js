@@ -106,7 +106,7 @@ window.addEventListener("scroll", () => {
 scrollTopBtn.addEventListener("click", () => window.scrollTo({ top: 0, behavior: "smooth" }));
 
 form.addEventListener("submit", (event) => {
-  event.preventDefault();
+  
   const nameField = document.getElementById("fullName");
   const emailField = document.getElementById("email");
   const messageField = document.getElementById("message");
@@ -117,27 +117,33 @@ form.addEventListener("submit", (event) => {
   [nameField, emailField, messageField].forEach((field) => field.classList.remove("invalid"));
 
   if (fullName.length < 2) {
+    event.preventDefault();
     nameField.classList.add("invalid");
     formMessage.textContent = "Please enter a valid name.";
     formMessage.style.color = "#ff7b7b";
     return;
   }
+
   if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+    event.preventDefault();
     emailField.classList.add("invalid");
     formMessage.textContent = "Please enter a valid email address.";
     formMessage.style.color = "#ff7b7b";
     return;
   }
+
   if (message.length < 10) {
+    event.preventDefault();
     messageField.classList.add("invalid");
     formMessage.textContent = "Message should be at least 10 characters.";
     formMessage.style.color = "#ff7b7b";
     return;
   }
 
-  formMessage.textContent = "Message sent successfully ✅";
+  // ✅ If everything is valid → DO NOT prevent default
+  formMessage.textContent = "Sending message...";
   formMessage.style.color = "#7ff0c8";
-  form.reset();
+
 });
 
 document.getElementById("year").textContent = new Date().getFullYear();
